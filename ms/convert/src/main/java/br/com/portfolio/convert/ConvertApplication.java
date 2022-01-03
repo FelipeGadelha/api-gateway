@@ -8,7 +8,6 @@ public class ConvertApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ConvertApplication.class, args);
-		System.err.println("-----------------------OLA MUNDO----------------------------");
 	}
 
 }

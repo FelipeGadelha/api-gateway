@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Optional;
 
 @RestController
+@RequestMapping("/v1/temperature")
 public class TemperatureController {
 
     @GetMapping("/convert-to-fahrenheit/{celsius}")
@@ -28,11 +29,6 @@ public class TemperatureController {
 
     @GetMapping("/hello-world")
     public ResponseEntity<String> getHello() {
-        System.err.println("------------------------- TESTANDO HELLO WORLD --------------------------");
-        return ResponseEntity.ok("Ola mundo");
-    }
-    @GetMapping("/")
-    public ResponseEntity<String> getHelloWorld() {
         System.err.println("------------------------- TESTANDO HELLO WORLD --------------------------");
         return ResponseEntity.ok("Ola mundo");
     }
